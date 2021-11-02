@@ -1,0 +1,97 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2012                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      fvSolution;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+solvers
+{
+    
+    "alpha.water.*"
+    {
+        nAlphaCorr      1;
+        nAlphaSubCycles 1;
+        cAlpha          1;
+
+        MULESCorr       yes;
+        nLimiterIter    5;
+
+        solver          smoothSolver;
+        smoother        symGaussSeidel;
+        tolerance       1e-8;
+        relTol          0;
+    }
+    
+    pcorr
+    {
+        solver          PCG;
+        preconditioner  DIC;
+        tolerance       1e-7;
+        relTol          0;
+	maxIter		20;
+    }
+
+    pcorrFinal
+    {
+        $pcorr;
+        relTol          0;
+    }
+
+    p_rgh
+    {
+        solver           PCG;
+        preconditioner   DIC;
+        tolerance        1e-07;
+        relTol           0.05;
+	maxIter		 20;
+    };
+
+    p_rghFinal
+    {
+        $p_rgh;
+        relTol          0;
+    }
+ 
+    U
+    {
+        solver          smoothSolver; // o PBiCGStab si falla PBi
+        smoother        symGaussSeidel; // con smoother GaussSeidel
+        tolerance       1e-06;
+        relTol          0;
+    }
+    
+    UFinal
+    {
+        $U;
+        reTol   0;
+    }
+    
+}
+PIMPLE
+{
+    momentumPredictor no; no para bajos numeros de Reynolds, para altos se recomienda yes
+    nOuterCorrectors  1; 
+    nCorrectors       3;
+    nNonOrthogonalCorrectors  3;
+}
+
+relaxationFactors///factor de relajacion bajo da estabilidad en modelos, y consume mas recursos
+{
+    equations
+    {
+        ".*" 1;
+    }
+}
+
+// ************************************************************************* //
