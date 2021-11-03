@@ -1,21 +1,20 @@
-MIT License
+## Flujo Multifásico
 
-Copyright (c) 2021 SSA1917
+Para el desarrollo del caso se usa (OpenFOAM en su versión v2012 para Windows 10)[https://www.openfoam.com/], en el bash de (Ubuntu 18.04 LTS)[https://www.microsoft.com/es-ad/p/ubuntu-1804-lts/9n9tngvndl3q?activetab=pivot:overviewtab]. También, para la construcción de la geometria se emplea el software (Salome en su versión 8.3)[https://www.salome-platform.org/user-section] y para la visualización de los datos se emplea (paraView)[https://www.paraview.org/download/].
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+### Geometria 
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+La geometria corresponde a un canal rectangular con 1.2 metros de largo, 0.4
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+![Medidas_Geometria](https://user-images.githubusercontent.com/71046053/140184528-aee13ded-2ea2-48b5-a67e-005c64b90601.png)
+
+### Bordes
+
+![Geometria_FlujoImplicit](https://user-images.githubusercontent.com/71046053/140184521-a9ded4e2-122d-4cfd-9d19-7b3cc99de9f0.png)
+
+
+### Malla Computacional
+
+
+![Malla_FlujoImplicit](https://user-images.githubusercontent.com/71046053/140184525-5ac2ee1a-e207-4092-ba69-bcb0d705a890.png)
+
