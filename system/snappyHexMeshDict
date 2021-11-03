@@ -18,7 +18,7 @@ FoamFile
 //cuando se tiende a 180 en angulo se usan todos lso bordes. 
 // Which of the steps to run
 castellatedMesh true;//JN: "LEGO" mesh
-snap            true;//JN: real mesh
+snap            false;//JN: real mesh
 addLayers       false;//JN: layers, we will not use this in this tutorial
 
 

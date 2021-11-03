@@ -20,27 +20,27 @@ FoamFile
     inlet
     {
         type            patch;
-        nFaces          704;
-        startFace       85209;
+        nFaces          1024;
+        startFace       281112;
     }
     outlet
     {
         type            patch;
-        nFaces          704;
-        startFace       85913;
+        nFaces          1024;
+        startFace       282136;
     }
     container
     {
         type            wall;
         inGroups        1(wall);
-        nFaces          9966;
-        startFace       86617;
+        nFaces          29120;
+        startFace       283160;
     }
     atmosphere
     {
         type            patch;
-        nFaces          928;
-        startFace       96583;
+        nFaces          3020;
+        startFace       312280;
     }
 )
 
