@@ -18,7 +18,7 @@ FoamFile
 //cuando se tiende a 180 en angulo se usan todos lso bordes. 
 // Which of the steps to run
 castellatedMesh true;//JN: "LEGO" mesh
-snap            false;//JN: real mesh
+snap            true;//JN: real mesh
 addLayers       false;//JN: layers, we will not use this in this tutorial
 
 
@@ -111,12 +111,12 @@ castellatedMeshControls
         inlet
         {
             // Surface-wise min and max refinement level (minimo, maximo)
-            level (2 2);//JN: refinement defined by surfaces - i.e. stl surfaces
+            level (1 1);//JN: refinement defined by surfaces - i.e. stl surfaces
         }
 	outlet
         {
             // Surface-wise min and max refinement level
-            level (2 2);
+            level (1 1);
         }
 	container
         {
@@ -126,12 +126,12 @@ castellatedMeshControls
 	atmosphere
         {
             // Surface-wise min and max refinement level
-            level (1 2);
+            level (1 1);
         }
 
     }
 
-    resolveFeatureAngle 20;//entre menor mejor sera el refinamiento de 0 a 180 toma todos los bordes del stl para refinar 
+    resolveFeatureAngle 10;//entre menor mejor sera el refinamiento de 0 a 180 toma todos los bordes del stl para refinar 
 
 
     // Region-wise refinement
