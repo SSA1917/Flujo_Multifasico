@@ -33,51 +33,41 @@ solvers
         relTol          0;
     }
     
-    pcorr
+    "pcorr.*"
     {
-        solver          PCG;
-        preconditioner  DIC;
-        tolerance       1e-7;
+        solver          GAMG;
+        smoother	GaussSeidel;
+        tolerance       1e-5;
         relTol          0;
-	maxIter		20;
-    }
-
-    pcorrFinal
-    {
-        $pcorr;
-        relTol          0;
+        maxIter         20;
     }
 
     p_rgh
     {
-        solver           PCG;
-        preconditioner   DIC;
-        tolerance        1e-07;
-        relTol           0.05;
-	maxIter		 20;
+        solver           GAMG;
+        tolerance        1e-5;
+        relTol           0.01;
+        smoother         GaussSeidel;
+        maxIter          20;
     };
 
     p_rghFinal
     {
         $p_rgh;
+        tolerance       1e-5;
         relTol          0;
     }
- 
-    U
+
+    "(U|k|epsilon).*"
     {
         solver          smoothSolver; // o PBiCGStab si falla PBi
         smoother        symGaussSeidel; // con smoother GaussSeidel
         tolerance       1e-06;
         relTol          0;
-    }
-    
-    UFinal
-    {
-        $U;
-        reTol   0;
-    }
-    
+	nSweeps         1;
+    }   
 }
+    
 PIMPLE
 {
     momentumPredictor no; no para bajos numeros de Reynolds, para altos se recomienda yes
