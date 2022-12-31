@@ -1,0 +1,19 @@
+# Wavefront OBJ file written 2022-12-31T11:00:31
+o atmosphere_edgeMesh
+
+# points : 4
+# lines  : 4
+
+# <points count="4">
+v 0 0.3 0.2
+v 0 0 0.2
+v 1 0 0.2
+v 1 0.3 0.2
+# </points>
+
+# <edges count="4">
+l 1 2
+l 2 3
+l 3 4
+l 4 1
+# </edges>

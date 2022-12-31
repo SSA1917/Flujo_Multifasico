@@ -1,0 +1,245 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  7
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 7-3bcbaf946ae9
+Exec   : surfaceFeatureExtract
+Date   : Dec 31 2022
+Time   : 11:00:31
+Host   : "nisan-Satellite-A505"
+PID    : 4506
+I/O    : uncollated
+Case   : /home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Reading surfaceFeatureExtractDict
+
+Surface            : "inlet.stl"
+
+
+Feature line extraction is only valid on closed manifold surfaces.
+Statistics:
+Triangles    : 2
+Vertices     : 4
+Bounding Box : (0 0 0) (0 0.3 0.2)
+
+
+Constructing feature set from included angle 120
+Selecting edges purely based on geometric tests: no
+
+Initial feature set:
+    feature points : 4
+    feature edges  : 4
+    of which
+        region edges   : 4
+        external edges : 0
+        internal edges : 0
+
+
+Final feature set:
+    points : 4
+    of which
+        convex             : 0
+        concave            : 0
+        mixed              : 4
+        non-feature        : 0
+    edges  : 4
+    of which
+        external edges     : 0
+        internal edges     : 0
+        flat edges         : 0
+        open edges         : 4
+        multiply connected : 0
+
+Writing extendedFeatureEdgeMesh to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/inlet.extendedFeatureEdgeMesh"
+
+Writing extendedEdgeMesh components to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/inlet"
+Writing convex feature points to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/inlet_convexFeaturePts.obj"
+Writing concave feature points to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/inlet_concaveFeaturePts.obj"
+Writing mixed feature points to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/inlet_mixedFeaturePts.obj"
+Writing mixed feature point structure to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/inlet_mixedFeaturePtsStructure.obj"
+Writing external edges to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/inlet_externalEdges.obj"
+Writing internal edges to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/inlet_internalEdges.obj"
+Writing flat edges to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/inlet_flatEdges.obj"
+Writing open edges to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/inlet_openEdges.obj"
+Writing multiple edges to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/inlet_multipleEdges.obj"
+Writing region edges to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/inlet_regionEdges.obj"
+Writing edge directions to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/inlet_edgeDirections.obj"
+
+Writing featureEdgeMesh to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/triSurface/inlet.eMesh"
+
+Surface            : "outlet.stl"
+
+
+Feature line extraction is only valid on closed manifold surfaces.
+Statistics:
+Triangles    : 2
+Vertices     : 4
+Bounding Box : (1 0 0) (1 0.3 0.2)
+
+
+Constructing feature set from included angle 120
+Selecting edges purely based on geometric tests: no
+
+Initial feature set:
+    feature points : 4
+    feature edges  : 4
+    of which
+        region edges   : 4
+        external edges : 0
+        internal edges : 0
+
+
+Final feature set:
+    points : 4
+    of which
+        convex             : 0
+        concave            : 0
+        mixed              : 4
+        non-feature        : 0
+    edges  : 4
+    of which
+        external edges     : 0
+        internal edges     : 0
+        flat edges         : 0
+        open edges         : 4
+        multiply connected : 0
+
+Writing extendedFeatureEdgeMesh to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/outlet.extendedFeatureEdgeMesh"
+
+Writing extendedEdgeMesh components to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/outlet"
+Writing convex feature points to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/outlet_convexFeaturePts.obj"
+Writing concave feature points to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/outlet_concaveFeaturePts.obj"
+Writing mixed feature points to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/outlet_mixedFeaturePts.obj"
+Writing mixed feature point structure to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/outlet_mixedFeaturePtsStructure.obj"
+Writing external edges to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/outlet_externalEdges.obj"
+Writing internal edges to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/outlet_internalEdges.obj"
+Writing flat edges to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/outlet_flatEdges.obj"
+Writing open edges to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/outlet_openEdges.obj"
+Writing multiple edges to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/outlet_multipleEdges.obj"
+Writing region edges to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/outlet_regionEdges.obj"
+Writing edge directions to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/outlet_edgeDirections.obj"
+
+Writing featureEdgeMesh to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/triSurface/outlet.eMesh"
+
+Surface            : "container.stl"
+
+
+Feature line extraction is only valid on closed manifold surfaces.
+Statistics:
+Triangles    : 22
+Vertices     : 16
+Bounding Box : (0 0 0) (1 0.3 0.2)
+
+
+Constructing feature set from included angle 180
+Selecting edges purely based on geometric tests: no
+
+Initial feature set:
+    feature points : 16
+    feature edges  : 37
+    of which
+        region edges   : 8
+        external edges : 12
+        internal edges : 17
+
+
+Final feature set:
+    points : 16
+    of which
+        convex             : 1
+        concave            : 0
+        mixed              : 15
+        non-feature        : 0
+    edges  : 37
+    of which
+        external edges     : 12
+        internal edges     : 2
+        flat edges         : 15
+        open edges         : 8
+        multiply connected : 0
+
+Writing extendedFeatureEdgeMesh to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/container.extendedFeatureEdgeMesh"
+
+Writing extendedEdgeMesh components to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/container"
+Writing convex feature points to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/container_convexFeaturePts.obj"
+Writing concave feature points to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/container_concaveFeaturePts.obj"
+Writing mixed feature points to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/container_mixedFeaturePts.obj"
+Writing mixed feature point structure to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/container_mixedFeaturePtsStructure.obj"
+Writing external edges to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/container_externalEdges.obj"
+Writing internal edges to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/container_internalEdges.obj"
+Writing flat edges to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/container_flatEdges.obj"
+Writing open edges to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/container_openEdges.obj"
+Writing multiple edges to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/container_multipleEdges.obj"
+Writing region edges to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/container_regionEdges.obj"
+Writing edge directions to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/container_edgeDirections.obj"
+
+Writing featureEdgeMesh to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/triSurface/container.eMesh"
+
+Surface            : "atmosphere.stl"
+
+
+Feature line extraction is only valid on closed manifold surfaces.
+Statistics:
+Triangles    : 2
+Vertices     : 4
+Bounding Box : (0 0 0.2) (1 0.3 0.2)
+
+
+Constructing feature set from included angle 120
+Selecting edges purely based on geometric tests: no
+
+Initial feature set:
+    feature points : 4
+    feature edges  : 4
+    of which
+        region edges   : 4
+        external edges : 0
+        internal edges : 0
+
+
+Final feature set:
+    points : 4
+    of which
+        convex             : 0
+        concave            : 0
+        mixed              : 4
+        non-feature        : 0
+    edges  : 4
+    of which
+        external edges     : 0
+        internal edges     : 0
+        flat edges         : 0
+        open edges         : 4
+        multiply connected : 0
+
+Writing extendedFeatureEdgeMesh to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/atmosphere.extendedFeatureEdgeMesh"
+
+Writing extendedEdgeMesh components to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/atmosphere"
+Writing convex feature points to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/atmosphere_convexFeaturePts.obj"
+Writing concave feature points to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/atmosphere_concaveFeaturePts.obj"
+Writing mixed feature points to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/atmosphere_mixedFeaturePts.obj"
+Writing mixed feature point structure to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/atmosphere_mixedFeaturePtsStructure.obj"
+Writing external edges to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/atmosphere_externalEdges.obj"
+Writing internal edges to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/atmosphere_internalEdges.obj"
+Writing flat edges to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/atmosphere_flatEdges.obj"
+Writing open edges to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/atmosphere_openEdges.obj"
+Writing multiple edges to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/atmosphere_multipleEdges.obj"
+Writing region edges to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/atmosphere_regionEdges.obj"
+Writing edge directions to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/extendedFeatureEdgeMesh/atmosphere_edgeDirections.obj"
+
+Writing featureEdgeMesh to "/home/nisan/OpenFOAM/nisan-7/run/Flujo_Multifasico/constant/triSurface/atmosphere.eMesh"
+
+ExecutionTime = 0.01 s  ClockTime = 0 s
+
+End
+

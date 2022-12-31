@@ -93,8 +93,23 @@ castellatedMeshControls
     // This is a featureEdgeMesh, read from constant/triSurface for now.
     features
     (
+	{
+		file	"inlet.eMesh";
+		level	1;
+	}
+	{
+		file	"outlet.eMesh";
+		level	1;
+	}
+	{
+		file	"container.eMesh";
+		level	3;
+	}
+	{
+	    	file	"atmosphere.eMesh";
+		level	1;
+	}
     );
-
 
 
     // Surface based refinement
@@ -131,7 +146,7 @@ castellatedMeshControls
 
     }
 
-    resolveFeatureAngle 10;//entre menor mejor sera el refinamiento de 0 a 180 toma todos los bordes del stl para refinar 
+    resolveFeatureAngle 5;//entre menor mejor sera el refinamiento de 0 a 180 toma todos los bordes del stl para refinar 
 
 
     // Region-wise refinement
@@ -199,10 +214,10 @@ snapControls
         nFeatureSnapIter 10;
 
         //- Detect (geometric) features by sampling the surface
-        implicitFeatureSnap true;//desde el mismo snappy hace los calculos 
+        implicitFeatureSnap false;//desde el mismo snappy hace los calculos 
 
         //- Use castellatedMeshControls::features
-        explicitFeatureSnap false;//genera archivos con terminos de angulos para refinar de 180 a 0
+        explicitFeatureSnap true;//genera archivos con terminos de angulos para refinar de 180 a 0
 
         //- Detect features between multiple surfaces
         //  (only for explicitFeatureSnap, default = false)
