@@ -31,7 +31,7 @@ Se aclara que solo fue empleado el sub diccionario *castelleted*, presente en el
 
 ## Configuración del Caso
 
-En primera instancia, se configura el diccionario fvSchemes para una modelación Euleriana del flujo multifásico.
+En primera instancia, la simulación representará un flujo multifásico, como es el caso de un canal a borde libre. Dicho esto, se emplea el método VOF (Volumen Finito), de modo que, se capture la proporción de agua y aire en cada celda de la malla computacional, que en consecuencia, requiere aproximar las soluciones para velocidad y presión en RANS(*Reynolds Averange Navier Stokes*), tanto en fase gaseosa(aire) y líquida (agua). Además, se emplea el modelo de turbulencia *k-epsilon*, para el cálculo del tensor de Reynolds, presente en la ecuación de momento, del modelo RANS. Luego, se emplea el algoritmo PIMPLE con solo un paso de otras correcciones, de manera que, sea equivalente al Algoritmo PISO, ello, en conjunto con los pasos correctores de no ortogonalidad, las mínimas tolerancias tendiendo a 0 para el último paso corrector de U, p_rhg, k y e. Finalmente, se configura un paso de tiempo ajustable, en conjunto con un número de courant en 1, a fin de buscar la estabilidad.
 
 ## Implementación
 
@@ -92,10 +92,11 @@ boundaryField
 
 ## Recomendaciones
 
--
--
--
--
+- Verificar la versión de OpenFOAM que esté empleando.
+- Revisar las configuraciones recomendadas y modificarlas de ser necesario.
+- Comprobar que su equipo de computación, tenga capacidad suficiente para realizar los procesos de simulaciones.
+- Emplear sistemas nativos linux, como sistema operativo, de modo que no se limite su funcionalidad, como pasa en el subsistema de Linux en Windows.
+
 
 
 
