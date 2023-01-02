@@ -43,7 +43,6 @@ Para implementar el caso siga ordenadamente los siguientes pasos:
 5. Usar el comando `setFields`, pra definir las condiciones iniciales del término alphaWater. Debe asegurarse que el diccionario 0/alphawater este "Limpio".
 
 ```
-
 FoamFile
 {
     version     2.0;
@@ -56,14 +55,15 @@ FoamFile
 
 dimensions      [0 0 0 0 0 0 0];
 
-
-internalField   uniform 0; 
+internalField   uniform 0;
 
 boundaryField
 {
     inlet
     {
-        type            fixedValue;
+        type            variableHeightFlowRate;
+        lowerBound      0.5;
+        upperBound      0.9;
         value           uniform 1;
     }
     outlet
